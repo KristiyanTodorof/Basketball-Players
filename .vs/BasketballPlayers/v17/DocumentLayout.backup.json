@@ -3,6 +3,22 @@
   "WorkspaceRootPath": "C:\\Users\\Admin\\Documents\\GitHub\\Basketball-Players\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{7CB48001-807B-4DC2-A730-F84E880AFF0E}|BasketballPlayers.Web\\BasketballPlayers.Web.csproj|c:\\users\\admin\\documents\\github\\basketball-players\\basketballplayers.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7CB48001-807B-4DC2-A730-F84E880AFF0E}|BasketballPlayers.Web\\BasketballPlayers.Web.csproj|solutionrelative:basketballplayers.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5BE01C95-FE07-4210-9498-F8871F232CAB}|BasketballPlayers.Application\\BasketballPlayers.Application.csproj|c:\\users\\admin\\documents\\github\\basketball-players\\basketballplayers.application\\services\\csvimportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5BE01C95-FE07-4210-9498-F8871F232CAB}|BasketballPlayers.Application\\BasketballPlayers.Application.csproj|solutionrelative:basketballplayers.application\\services\\csvimportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5BE01C95-FE07-4210-9498-F8871F232CAB}|BasketballPlayers.Application\\BasketballPlayers.Application.csproj|c:\\users\\admin\\documents\\github\\basketball-players\\basketballplayers.application\\contracts\\icsvimportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5BE01C95-FE07-4210-9498-F8871F232CAB}|BasketballPlayers.Application\\BasketballPlayers.Application.csproj|solutionrelative:basketballplayers.application\\contracts\\icsvimportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5BE01C95-FE07-4210-9498-F8871F232CAB}|BasketballPlayers.Application\\BasketballPlayers.Application.csproj|c:\\users\\admin\\documents\\github\\basketball-players\\basketballplayers.application\\services\\mapping\\basketballmappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5BE01C95-FE07-4210-9498-F8871F232CAB}|BasketballPlayers.Application\\BasketballPlayers.Application.csproj|solutionrelative:basketballplayers.application\\services\\mapping\\basketballmappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{5BE01C95-FE07-4210-9498-F8871F232CAB}|BasketballPlayers.Application\\BasketballPlayers.Application.csproj|c:\\users\\admin\\documents\\github\\basketball-players\\basketballplayers.application\\viewmodels\\statsviewmodels\\statsupdateviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5BE01C95-FE07-4210-9498-F8871F232CAB}|BasketballPlayers.Application\\BasketballPlayers.Application.csproj|solutionrelative:basketballplayers.application\\viewmodels\\statsviewmodels\\statsupdateviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -47,6 +63,58 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\Basketball-Players\\BasketballPlayers.Web\\Program.cs",
+              "RelativeDocumentMoniker": "BasketballPlayers.Web\\Program.cs",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\Basketball-Players\\BasketballPlayers.Web\\Program.cs",
+              "RelativeToolTip": "BasketballPlayers.Web\\Program.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAlwDgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T14:46:53.486Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CsvImportService.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\Basketball-Players\\BasketballPlayers.Application\\Services\\CsvImportService.cs",
+              "RelativeDocumentMoniker": "BasketballPlayers.Application\\Services\\CsvImportService.cs",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\Basketball-Players\\BasketballPlayers.Application\\Services\\CsvImportService.cs",
+              "RelativeToolTip": "BasketballPlayers.Application\\Services\\CsvImportService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEMAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T14:36:17.722Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ICsvImportService.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\Basketball-Players\\BasketballPlayers.Application\\Contracts\\ICsvImportService.cs",
+              "RelativeDocumentMoniker": "BasketballPlayers.Application\\Contracts\\ICsvImportService.cs",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\Basketball-Players\\BasketballPlayers.Application\\Contracts\\ICsvImportService.cs",
+              "RelativeToolTip": "BasketballPlayers.Application\\Contracts\\ICsvImportService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T14:33:48.865Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BasketballMappingProfile.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\Basketball-Players\\BasketballPlayers.Application\\Services\\Mapping\\BasketballMappingProfile.cs",
+              "RelativeDocumentMoniker": "BasketballPlayers.Application\\Services\\Mapping\\BasketballMappingProfile.cs",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\Basketball-Players\\BasketballPlayers.Application\\Services\\Mapping\\BasketballMappingProfile.cs",
+              "RelativeToolTip": "BasketballPlayers.Application\\Services\\Mapping\\BasketballMappingProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T14:26:26.068Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "StatsUpdateViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\Basketball-Players\\BasketballPlayers.Application\\ViewModels\\StatsViewModels\\StatsUpdateViewModel.cs",
               "RelativeDocumentMoniker": "BasketballPlayers.Application\\ViewModels\\StatsViewModels\\StatsUpdateViewModel.cs",
@@ -59,7 +127,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "StatsCreateViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\Basketball-Players\\BasketballPlayers.Application\\ViewModels\\StatsViewModels\\StatsCreateViewModel.cs",
               "RelativeDocumentMoniker": "BasketballPlayers.Application\\ViewModels\\StatsViewModels\\StatsCreateViewModel.cs",
@@ -67,12 +135,11 @@
               "RelativeToolTip": "BasketballPlayers.Application\\ViewModels\\StatsViewModels\\StatsCreateViewModel.cs",
               "ViewState": "AgIAADAAAAAAAAAAAAAiwDsAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-19T14:14:46.894Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-19T14:14:46.894Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "BaseViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\Basketball-Players\\BasketballPlayers.Application\\ViewModels\\BaseViewModels\\BaseViewModel.cs",
               "RelativeDocumentMoniker": "BasketballPlayers.Application\\ViewModels\\BaseViewModels\\BaseViewModel.cs",
@@ -80,12 +147,11 @@
               "RelativeToolTip": "BasketballPlayers.Application\\ViewModels\\BaseViewModels\\BaseViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-19T13:54:43.398Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-19T13:54:43.398Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 10,
               "Title": "PlayerUpdateViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\Basketball-Players\\BasketballPlayers.Application\\ViewModels\\PlayerViewModels\\PlayerUpdateViewModel.cs",
               "RelativeDocumentMoniker": "BasketballPlayers.Application\\ViewModels\\PlayerViewModels\\PlayerUpdateViewModel.cs",
@@ -93,12 +159,11 @@
               "RelativeToolTip": "BasketballPlayers.Application\\ViewModels\\PlayerViewModels\\PlayerUpdateViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-19T13:57:46.775Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-19T13:57:46.775Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "PlayerCreateViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\Basketball-Players\\BasketballPlayers.Application\\ViewModels\\PlayerViewModels\\PlayerCreateViewModel.cs",
               "RelativeDocumentMoniker": "BasketballPlayers.Application\\ViewModels\\PlayerViewModels\\PlayerCreateViewModel.cs",
@@ -106,12 +171,11 @@
               "RelativeToolTip": "BasketballPlayers.Application\\ViewModels\\PlayerViewModels\\PlayerCreateViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-19T13:55:08.136Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-19T13:55:08.136Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 11,
               "Title": "PlayerDetailViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\Basketball-Players\\BasketballPlayers.Application\\ViewModels\\PlayerViewModels\\PlayerDetailViewModel.cs",
               "RelativeDocumentMoniker": "BasketballPlayers.Application\\ViewModels\\PlayerViewModels\\PlayerDetailViewModel.cs",
@@ -119,12 +183,11 @@
               "RelativeToolTip": "BasketballPlayers.Application\\ViewModels\\PlayerViewModels\\PlayerDetailViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-19T13:47:49.861Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-19T13:47:49.861Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "StatsViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\Basketball-Players\\BasketballPlayers.Application\\ViewModels\\StatsViewModels\\StatsViewModel.cs",
               "RelativeDocumentMoniker": "BasketballPlayers.Application\\ViewModels\\StatsViewModels\\StatsViewModel.cs",
@@ -132,12 +195,11 @@
               "RelativeToolTip": "BasketballPlayers.Application\\ViewModels\\StatsViewModels\\StatsViewModel.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAA3wCMAAABqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-19T13:35:43.069Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-19T13:35:43.069Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
               "Title": "PlayerViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\Basketball-Players\\BasketballPlayers.Application\\ViewModels\\PlayerViewModels\\PlayerViewModel.cs",
               "RelativeDocumentMoniker": "BasketballPlayers.Application\\ViewModels\\PlayerViewModels\\PlayerViewModel.cs",
@@ -145,8 +207,7 @@
               "RelativeToolTip": "BasketballPlayers.Application\\ViewModels\\PlayerViewModels\\PlayerViewModel.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAqwAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-19T13:21:22.06Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-19T13:21:22.06Z"
             }
           ]
         }

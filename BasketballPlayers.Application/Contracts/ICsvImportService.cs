@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace BasketballPlayers.Application.Contracts
 {
-    public interface IFileReader
+    public interface ICsvImportService
     {
-         void ReadData();
+        Task ImportBasketballDataAsync(string filePath);
     }
 }

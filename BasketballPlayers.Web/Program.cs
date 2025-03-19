@@ -7,6 +7,7 @@ using BasketballPlayers.Infrastructure.Repositories.Interfaces;
 using BasketballPlayers.Infrastructure.Repositories;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using BasketballPlayers.Application.Services.Mapping;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -16,22 +17,17 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(connectionString));
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
+builder.Services.AddAutoMapper(typeof(BasketballMappingProfile));
+
 
 builder.Services.AddDefaultIdentity<User>(options => options.SignIn.RequireConfirmedAccount = true)
     .AddEntityFrameworkStores<ApplicationDbContext>();
 builder.Services.AddControllersWithViews();
 builder.Services.AddScoped<IPlayerRepository, PlayerRepository>();
 builder.Services.AddScoped<IStatsRepository, StatsRepository>();
-builder.Services.AddScoped<IFileReader,FileReaderService>();
+builder.Services.AddScoped<ICsvImportService, CsvImportService>();
 
 var app = builder.Build();
-using (var serviceScope = app.Services.CreateScope())
-{
-    var services = serviceScope.ServiceProvider;
-    var dependancy = services.GetRequiredService<IFileReader>();
-    dependancy.ReadData();
-}
-
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
