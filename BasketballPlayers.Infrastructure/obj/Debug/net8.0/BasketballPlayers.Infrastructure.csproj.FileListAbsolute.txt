@@ -1,0 +1,17 @@
+C:\Users\Admin\Documents\BasketballPlayers\BasketballPlayers.Infrastructure\obj\Debug\net8.0\BasketballPlayers.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\Admin\Documents\BasketballPlayers\BasketballPlayers.Infrastructure\obj\Debug\net8.0\BasketballPlayers.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Documents\BasketballPlayers\BasketballPlayers.Infrastructure\obj\Debug\net8.0\BasketballPlayers.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\Admin\Documents\BasketballPlayers\BasketballPlayers.Infrastructure\obj\Debug\net8.0\BasketballPlayers.Infrastructure.AssemblyInfo.cs
+C:\Users\Admin\Documents\BasketballPlayers\BasketballPlayers.Infrastructure\obj\Debug\net8.0\BasketballPlayers.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Documents\BasketballPlayers\BasketballPlayers.Infrastructure\bin\Debug\net8.0\BasketballPlayers.Infrastructure.deps.json
+C:\Users\Admin\Documents\BasketballPlayers\BasketballPlayers.Infrastructure\bin\Debug\net8.0\BasketballPlayers.Infrastructure.runtimeconfig.json
+C:\Users\Admin\Documents\BasketballPlayers\BasketballPlayers.Infrastructure\bin\Debug\net8.0\BasketballPlayers.Infrastructure.dll
+C:\Users\Admin\Documents\BasketballPlayers\BasketballPlayers.Infrastructure\bin\Debug\net8.0\BasketballPlayers.Infrastructure.pdb
+C:\Users\Admin\Documents\BasketballPlayers\BasketballPlayers.Infrastructure\bin\Debug\net8.0\BasketballPlayers.Domain.dll
+C:\Users\Admin\Documents\BasketballPlayers\BasketballPlayers.Infrastructure\bin\Debug\net8.0\BasketballPlayers.Domain.pdb
+C:\Users\Admin\Documents\BasketballPlayers\BasketballPlayers.Infrastructure\obj\Debug\net8.0\Basketba.02BFF3E4.Up2Date
+C:\Users\Admin\Documents\BasketballPlayers\BasketballPlayers.Infrastructure\obj\Debug\net8.0\BasketballPlayers.Infrastructure.dll
+C:\Users\Admin\Documents\BasketballPlayers\BasketballPlayers.Infrastructure\obj\Debug\net8.0\refint\BasketballPlayers.Infrastructure.dll
+C:\Users\Admin\Documents\BasketballPlayers\BasketballPlayers.Infrastructure\obj\Debug\net8.0\BasketballPlayers.Infrastructure.pdb
+C:\Users\Admin\Documents\BasketballPlayers\BasketballPlayers.Infrastructure\obj\Debug\net8.0\BasketballPlayers.Infrastructure.genruntimeconfig.cache
+C:\Users\Admin\Documents\BasketballPlayers\BasketballPlayers.Infrastructure\obj\Debug\net8.0\ref\BasketballPlayers.Infrastructure.dll
