@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "NAlL87Pe3l0=",
+  "dgSpecHash": "ZiZxjYw7+Q4=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Admin\\Documents\\BasketballPlayers\\BasketballPlayers.Infrastructure\\BasketballPlayers.Infrastructure.csproj",
+  "projectFilePath": "C:\\Users\\Admin\\Documents\\GitHub\\Basketball-Players\\BasketballPlayers.Infrastructure\\BasketballPlayers.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

@@ -4598,11 +4598,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Admin\\Documents\\BasketballPlayers\\BasketballPlayers.Web\\BasketballPlayers.Web.csproj",
+      "projectUniqueName": "C:\\Users\\Admin\\Documents\\GitHub\\Basketball-Players\\BasketballPlayers.Web\\BasketballPlayers.Web.csproj",
       "projectName": "BasketballPlayers.Web",
-      "projectPath": "C:\\Users\\Admin\\Documents\\BasketballPlayers\\BasketballPlayers.Web\\BasketballPlayers.Web.csproj",
+      "projectPath": "C:\\Users\\Admin\\Documents\\GitHub\\Basketball-Players\\BasketballPlayers.Web\\BasketballPlayers.Web.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Admin\\Documents\\BasketballPlayers\\BasketballPlayers.Web\\obj\\",
+      "outputPath": "C:\\Users\\Admin\\Documents\\GitHub\\Basketball-Players\\BasketballPlayers.Web\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -4620,11 +4620,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\Admin\\Documents\\BasketballPlayers\\BasketballPlayers.Application\\BasketballPlayers.Application.csproj": {
-              "projectPath": "C:\\Users\\Admin\\Documents\\BasketballPlayers\\BasketballPlayers.Application\\BasketballPlayers.Application.csproj"
+            "C:\\Users\\Admin\\Documents\\GitHub\\Basketball-Players\\BasketballPlayers.Application\\BasketballPlayers.Application.csproj": {
+              "projectPath": "C:\\Users\\Admin\\Documents\\GitHub\\Basketball-Players\\BasketballPlayers.Application\\BasketballPlayers.Application.csproj"
             },
-            "C:\\Users\\Admin\\Documents\\BasketballPlayers\\BasketballPlayers.Infrastructure\\BasketballPlayers.Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\Admin\\Documents\\BasketballPlayers\\BasketballPlayers.Infrastructure\\BasketballPlayers.Infrastructure.csproj"
+            "C:\\Users\\Admin\\Documents\\GitHub\\Basketball-Players\\BasketballPlayers.Infrastructure\\BasketballPlayers.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\Admin\\Documents\\GitHub\\Basketball-Players\\BasketballPlayers.Infrastructure\\BasketballPlayers.Infrastructure.csproj"
             }
           }
         }

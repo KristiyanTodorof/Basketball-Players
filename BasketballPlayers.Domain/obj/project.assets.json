@@ -4254,11 +4254,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Admin\\Documents\\BasketballPlayers\\BasketballPlayers.Domain\\BasketballPlayers.Domain.csproj",
+      "projectUniqueName": "C:\\Users\\Admin\\Documents\\GitHub\\Basketball-Players\\BasketballPlayers.Domain\\BasketballPlayers.Domain.csproj",
       "projectName": "BasketballPlayers.Domain",
-      "projectPath": "C:\\Users\\Admin\\Documents\\BasketballPlayers\\BasketballPlayers.Domain\\BasketballPlayers.Domain.csproj",
+      "projectPath": "C:\\Users\\Admin\\Documents\\GitHub\\Basketball-Players\\BasketballPlayers.Domain\\BasketballPlayers.Domain.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Admin\\Documents\\BasketballPlayers\\BasketballPlayers.Domain\\obj\\",
+      "outputPath": "C:\\Users\\Admin\\Documents\\GitHub\\Basketball-Players\\BasketballPlayers.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
