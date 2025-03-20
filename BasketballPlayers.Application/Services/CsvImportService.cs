@@ -39,14 +39,12 @@ namespace BasketballPlayers.Application.Services
 
                 foreach (var record in records)
                 {
-                    // Process player
                     Player player;
                     if (!playersDict.ContainsKey(record.Name))
                     {
                         player = _mapper.Map<Player>(record);
                         playersDict.Add(record.Name, player);
                         await _playerRepository.AddAsync(player);
-                        // We need to save changes here to get the player ID
                         await _playerRepository.SaveChangesAsync();
                     }
                     else
@@ -54,13 +52,11 @@ namespace BasketballPlayers.Application.Services
                         player = playersDict[record.Name];
                     }
 
-                    // Create stats
                     var stats = _mapper.Map<Stats>(record);
                     stats.PlayerId = player.Id;
                     await _statsRepository.AddAsync(stats);
                     await _statsRepository.SaveChangesAsync();
 
-                    // Update player with stats reference
                     player.Stats = stats;
                     await _playerRepository.UpdateAsync(player);
                     await _playerRepository.SaveChangesAsync();

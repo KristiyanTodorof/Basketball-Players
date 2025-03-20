@@ -23,9 +23,14 @@ builder.Services.AddAutoMapper(typeof(BasketballMappingProfile));
 builder.Services.AddDefaultIdentity<User>(options => options.SignIn.RequireConfirmedAccount = true)
     .AddEntityFrameworkStores<ApplicationDbContext>();
 builder.Services.AddControllersWithViews();
+
 builder.Services.AddScoped<IPlayerRepository, PlayerRepository>();
 builder.Services.AddScoped<IStatsRepository, StatsRepository>();
+
 builder.Services.AddScoped<ICsvImportService, CsvImportService>();
+builder.Services.AddScoped<IPlayerService, PlayerService>();
+builder.Services.AddScoped<IStatsService, StatsService>();
+
 
 var app = builder.Build();
 // Configure the HTTP request pipeline.
