@@ -1,6 +1,60 @@
 ﻿@{
     ViewData["Title"] = "Privacy Policy";
 }
-<h1>@ViewData["Title"]</h1>
 
-<p>Use this page to detail your site's privacy policy.</p>
+<div class="container">
+    <h1 class="display-4 text-center mb-4">@ViewData["Title"]</h1>
+    <p class="lead text-center">Last updated: @DateTime.Now.ToString("MMMM dd, yyyy")</p>
+
+    <div class="card mt-5 mb-4 shadow-sm">
+        <div class="card-body">
+            <h2>Introduction</h2>
+            <p>
+                Basketball Players Management System ("we," "our," or "us") respects your privacy and is committed to protecting it through our compliance with this policy.
+                This policy describes the types of information we may collect from you or that you may provide when you use our system and our practices for collecting,
+                using, maintaining, protecting, and disclosing that information.
+            </p>
+
+            <h2 class="mt-4">Information We Collect</h2>
+            <p>
+                We collect several types of information from and about users of our system, including:
+            </p>
+            <ul>
+                <li>Personal information such as name, email address, and contact information</li>
+                <li>Player information including performance statistics and profile data</li>
+                <li>System usage information and analytics</li>
+                <li>Technical information about your equipment and internet connection</li>
+            </ul>
+
+            <h2 class="mt-4">How We Use Your Information</h2>
+            <p>
+                We use information that we collect about you or that you provide to us:
+            </p>
+            <ul>
+                <li>To provide, maintain, and improve our system</li>
+                <li>To process and manage player data and statistics</li>
+                <li>To respond to your inquiries and provide customer support</li>
+                <li>To analyze system usage and optimize performance</li>
+                <li>To comply with legal obligations</li>
+            </ul>
+
+            <h2 class="mt-4">Data Security</h2>
+            <p>
+                We have implemented measures designed to secure your personal information from accidental loss and from unauthorized access, use, alteration, and disclosure.
+                All information you provide to us is stored on secure servers behind firewalls. Any sensitive information is encrypted using SSL technology.
+            </p>
+
+            <h2 class="mt-4">Changes to Our Privacy Policy</h2>
+            <p>
+                We may update our privacy policy from time to time. If we make material changes to how we treat our users' personal information,
+                we will notify you through a notice on this page. The date the privacy policy was last revised is identified at the top of the page.
+            </p>
+
+            <h2 class="mt-4">Contact Information</h2>
+            <p>
+                To ask questions or comment about this privacy policy and our privacy practices, contact us at:
+                privacy@basketballplayers.com
+            </p>
+        </div>
+    </div>
+</div>

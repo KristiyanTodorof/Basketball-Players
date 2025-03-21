@@ -1,0 +1,16 @@
+﻿@using BasketballPlayers.Application.ViewModels.PlayerViewModels
+@model PlayerDetailViewModel
+
+<h1>Player Details</h1>
+<dl class="row">
+    <dt class="col-sm-2">Name</dt>
+    <dd class="col-sm-10">@Model.Name</dd>
+    <dt class="col-sm-2">Games Played</dt>
+    <dd class="col-sm-10">@Model.Stats.GamesPlayed</dd>
+    <dt class="col-sm-2">Points Per Game</dt>
+    <dd class="col-sm-10">@Model.Stats.PointsPerGame</dd>
+    <dt class="col-sm-2">Assists Per Game</dt>
+    <dd class="col-sm-10">@Model.Stats.AssistsPerGame</dd>
+</dl>
+<a href="/Player" class="btn btn-secondary">Back to List</a>
+

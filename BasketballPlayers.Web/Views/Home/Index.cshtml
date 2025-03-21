@@ -3,6 +3,45 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h1 class="display-4">Welcome to Basketball Players Management System</h1>
+    <p class="lead">Track, manage, and analyze basketball players and their statistics.</p>
+</div>
+
+<div class="row mt-5">
+    <div class="col-md-4">
+        <div class="card mb-4 shadow-sm">
+            <div class="card-body text-center">
+                <i class="bi bi-people-fill text-primary" style="font-size: 3rem;"></i>
+                <h3 class="card-title mt-3">Players</h3>
+                <p class="card-text">View and manage basketball players in the system.</p>
+                <div class="d-flex justify-content-center">
+                    <a asp-controller="Player" asp-action="Index" class="btn btn-primary">View Players</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card mb-4 shadow-sm">
+            <div class="card-body text-center">
+                <i class="bi bi-graph-up text-success" style="font-size: 3rem;"></i>
+                <h3 class="card-title mt-3">Statistics</h3>
+                <p class="card-text">Track and analyze player performance statistics.</p>
+                <div class="d-flex justify-content-center">
+                    <a href="#" class="btn btn-success">View Statistics</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card mb-4 shadow-sm">
+            <div class="card-body text-center">
+                <i class="bi bi-info-circle-fill text-info" style="font-size: 3rem;"></i>
+                <h3 class="card-title mt-3">About</h3>
+                <p class="card-text">Learn more about the Basketball Players Management System.</p>
+                <div class="d-flex justify-content-center">
+                    <a asp-controller="Home" asp-action="About" class="btn btn-info">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
