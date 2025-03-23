@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Admin\\Documents\\GitHub\\Basketball-Players\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7CB48001-807B-4DC2-A730-F84E880AFF0E}|BasketballPlayers.Web\\BasketballPlayers.Web.csproj|c:\\users\\admin\\documents\\github\\basketball-players\\basketballplayers.web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7CB48001-807B-4DC2-A730-F84E880AFF0E}|BasketballPlayers.Web\\BasketballPlayers.Web.csproj|solutionrelative:basketballplayers.web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{5BE01C95-FE07-4210-9498-F8871F232CAB}|BasketballPlayers.Application\\BasketballPlayers.Application.csproj|c:\\users\\admin\\documents\\github\\basketball-players\\basketballplayers.application\\pagination\\paginatedlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5BE01C95-FE07-4210-9498-F8871F232CAB}|BasketballPlayers.Application\\BasketballPlayers.Application.csproj|solutionrelative:basketballplayers.application\\pagination\\paginatedlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7CB48001-807B-4DC2-A730-F84E880AFF0E}|BasketballPlayers.Web\\BasketballPlayers.Web.csproj|c:\\users\\admin\\documents\\github\\basketball-players\\basketballplayers.web\\views\\stats\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7CB48001-807B-4DC2-A730-F84E880AFF0E}|BasketballPlayers.Web\\BasketballPlayers.Web.csproj|solutionrelative:basketballplayers.web\\views\\stats\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{7CB48001-807B-4DC2-A730-F84E880AFF0E}|BasketballPlayers.Web\\BasketballPlayers.Web.csproj|c:\\users\\admin\\documents\\github\\basketball-players\\basketballplayers.web\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7CB48001-807B-4DC2-A730-F84E880AFF0E}|BasketballPlayers.Web\\BasketballPlayers.Web.csproj|solutionrelative:basketballplayers.web\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7CB48001-807B-4DC2-A730-F84E880AFF0E}|BasketballPlayers.Web\\BasketballPlayers.Web.csproj|c:\\users\\admin\\documents\\github\\basketball-players\\basketballplayers.web\\views\\stats\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7CB48001-807B-4DC2-A730-F84E880AFF0E}|BasketballPlayers.Web\\BasketballPlayers.Web.csproj|solutionrelative:basketballplayers.web\\views\\stats\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{7CB48001-807B-4DC2-A730-F84E880AFF0E}|BasketballPlayers.Web\\BasketballPlayers.Web.csproj|c:\\users\\admin\\documents\\github\\basketball-players\\basketballplayers.web\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7CB48001-807B-4DC2-A730-F84E880AFF0E}|BasketballPlayers.Web\\BasketballPlayers.Web.csproj|solutionrelative:basketballplayers.web\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7CB48001-807B-4DC2-A730-F84E880AFF0E}|BasketballPlayers.Web\\BasketballPlayers.Web.csproj|c:\\users\\admin\\documents\\github\\basketball-players\\basketballplayers.web\\views\\stats\\playerstats.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -23,28 +23,44 @@
       "RelativeMoniker": "D:0:0:{7CB48001-807B-4DC2-A730-F84E880AFF0E}|BasketballPlayers.Web\\BasketballPlayers.Web.csproj|solutionrelative:basketballplayers.web\\views\\stats\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5BE01C95-FE07-4210-9498-F8871F232CAB}|BasketballPlayers.Application\\BasketballPlayers.Application.csproj|c:\\users\\admin\\documents\\github\\basketball-players\\basketballplayers.application\\viewmodels\\statsviewmodels\\statscreateviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5BE01C95-FE07-4210-9498-F8871F232CAB}|BasketballPlayers.Application\\BasketballPlayers.Application.csproj|solutionrelative:basketballplayers.application\\viewmodels\\statsviewmodels\\statscreateviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5BE01C95-FE07-4210-9498-F8871F232CAB}|BasketballPlayers.Application\\BasketballPlayers.Application.csproj|c:\\users\\admin\\documents\\github\\basketball-players\\basketballplayers.application\\viewmodels\\statsviewmodels\\statsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5BE01C95-FE07-4210-9498-F8871F232CAB}|BasketballPlayers.Application\\BasketballPlayers.Application.csproj|solutionrelative:basketballplayers.application\\viewmodels\\statsviewmodels\\statsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7CB48001-807B-4DC2-A730-F84E880AFF0E}|BasketballPlayers.Web\\BasketballPlayers.Web.csproj|c:\\users\\admin\\documents\\github\\basketball-players\\basketballplayers.web\\views\\stats\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7CB48001-807B-4DC2-A730-F84E880AFF0E}|BasketballPlayers.Web\\BasketballPlayers.Web.csproj|solutionrelative:basketballplayers.web\\views\\stats\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7CB48001-807B-4DC2-A730-F84E880AFF0E}|BasketballPlayers.Web\\BasketballPlayers.Web.csproj|c:\\users\\admin\\documents\\github\\basketball-players\\basketballplayers.web\\views\\player\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{7CB48001-807B-4DC2-A730-F84E880AFF0E}|BasketballPlayers.Web\\BasketballPlayers.Web.csproj|solutionrelative:basketballplayers.web\\views\\player\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7CB48001-807B-4DC2-A730-F84E880AFF0E}|BasketballPlayers.Web\\BasketballPlayers.Web.csproj|c:\\users\\admin\\documents\\github\\basketball-players\\basketballplayers.web\\views\\player\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7CB48001-807B-4DC2-A730-F84E880AFF0E}|BasketballPlayers.Web\\BasketballPlayers.Web.csproj|solutionrelative:basketballplayers.web\\views\\player\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{7CB48001-807B-4DC2-A730-F84E880AFF0E}|BasketballPlayers.Web\\BasketballPlayers.Web.csproj|c:\\users\\admin\\documents\\github\\basketball-players\\basketballplayers.web\\views\\player\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{7CB48001-807B-4DC2-A730-F84E880AFF0E}|BasketballPlayers.Web\\BasketballPlayers.Web.csproj|solutionrelative:basketballplayers.web\\views\\player\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{7CB48001-807B-4DC2-A730-F84E880AFF0E}|BasketballPlayers.Web\\BasketballPlayers.Web.csproj|c:\\users\\admin\\documents\\github\\basketball-players\\basketballplayers.web\\views\\player\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7CB48001-807B-4DC2-A730-F84E880AFF0E}|BasketballPlayers.Web\\BasketballPlayers.Web.csproj|solutionrelative:basketballplayers.web\\views\\player\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{7CB48001-807B-4DC2-A730-F84E880AFF0E}|BasketballPlayers.Web\\BasketballPlayers.Web.csproj|c:\\users\\admin\\documents\\github\\basketball-players\\basketballplayers.web\\views\\player\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{7CB48001-807B-4DC2-A730-F84E880AFF0E}|BasketballPlayers.Web\\BasketballPlayers.Web.csproj|solutionrelative:basketballplayers.web\\views\\player\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CB48001-807B-4DC2-A730-F84E880AFF0E}|BasketballPlayers.Web\\BasketballPlayers.Web.csproj|c:\\users\\admin\\documents\\github\\basketball-players\\basketballplayers.web\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{7CB48001-807B-4DC2-A730-F84E880AFF0E}|BasketballPlayers.Web\\BasketballPlayers.Web.csproj|solutionrelative:basketballplayers.web\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CB48001-807B-4DC2-A730-F84E880AFF0E}|BasketballPlayers.Web\\BasketballPlayers.Web.csproj|c:\\users\\admin\\documents\\github\\basketball-players\\basketballplayers.web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7CB48001-807B-4DC2-A730-F84E880AFF0E}|BasketballPlayers.Web\\BasketballPlayers.Web.csproj|solutionrelative:basketballplayers.web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CB48001-807B-4DC2-A730-F84E880AFF0E}|BasketballPlayers.Web\\BasketballPlayers.Web.csproj|c:\\users\\admin\\documents\\github\\basketball-players\\basketballplayers.web\\views\\stats\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7CB48001-807B-4DC2-A730-F84E880AFF0E}|BasketballPlayers.Web\\BasketballPlayers.Web.csproj|solutionrelative:basketballplayers.web\\views\\stats\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5BE01C95-FE07-4210-9498-F8871F232CAB}|BasketballPlayers.Application\\BasketballPlayers.Application.csproj|c:\\users\\admin\\documents\\github\\basketball-players\\basketballplayers.application\\viewmodels\\statsviewmodels\\statscreateviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5BE01C95-FE07-4210-9498-F8871F232CAB}|BasketballPlayers.Application\\BasketballPlayers.Application.csproj|solutionrelative:basketballplayers.application\\viewmodels\\statsviewmodels\\statscreateviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5BE01C95-FE07-4210-9498-F8871F232CAB}|BasketballPlayers.Application\\BasketballPlayers.Application.csproj|c:\\users\\admin\\documents\\github\\basketball-players\\basketballplayers.application\\viewmodels\\statsviewmodels\\statsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5BE01C95-FE07-4210-9498-F8871F232CAB}|BasketballPlayers.Application\\BasketballPlayers.Application.csproj|solutionrelative:basketballplayers.application\\viewmodels\\statsviewmodels\\statsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{03475688-8F4B-4907-8EDB-AC2ABB8BECFE}|BasketballPlayers.Domain\\BasketballPlayers.Domain.csproj|c:\\users\\admin\\documents\\github\\basketball-players\\basketballplayers.domain\\models\\stats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -63,32 +79,84 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "PaginatedList.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\Basketball-Players\\BasketballPlayers.Application\\Pagination\\PaginatedList.cs",
+              "RelativeDocumentMoniker": "BasketballPlayers.Application\\Pagination\\PaginatedList.cs",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\Basketball-Players\\BasketballPlayers.Application\\Pagination\\PaginatedList.cs",
+              "RelativeToolTip": "BasketballPlayers.Application\\Pagination\\PaginatedList.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAgwCIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T11:11:31.813Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\Basketball-Players\\BasketballPlayers.Web\\Views\\Home\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "BasketballPlayers.Web\\Views\\Home\\Privacy.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\Basketball-Players\\BasketballPlayers.Web\\Views\\Home\\Privacy.cshtml",
+              "RelativeToolTip": "BasketballPlayers.Web\\Views\\Home\\Privacy.cshtml",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAACgAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-23T10:54:12.518Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\Basketball-Players\\BasketballPlayers.Web\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "BasketballPlayers.Web\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\Basketball-Players\\BasketballPlayers.Web\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "BasketballPlayers.Web\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-23T10:43:18.66Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\Basketball-Players\\BasketballPlayers.Web\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "BasketballPlayers.Web\\wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\Basketball-Players\\BasketballPlayers.Web\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "BasketballPlayers.Web\\wwwroot\\css\\site.css",
+              "ViewState": "AgIAAHsAAAAAAAAAAADwv7EAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-03-23T10:40:08.373Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\Basketball-Players\\BasketballPlayers.Web\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "BasketballPlayers.Web\\Views\\Shared\\_Layout.cshtml",
               "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\Basketball-Players\\BasketballPlayers.Web\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "BasketballPlayers.Web\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAGAAAAAAAAAA==",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAAAoAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-03-23T10:36:27.263Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\Basketball-Players\\BasketballPlayers.Web\\Views\\Stats\\Edit.cshtml",
               "RelativeDocumentMoniker": "BasketballPlayers.Web\\Views\\Stats\\Edit.cshtml",
               "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\Basketball-Players\\BasketballPlayers.Web\\Views\\Stats\\Edit.cshtml",
               "RelativeToolTip": "BasketballPlayers.Web\\Views\\Stats\\Edit.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAAAHAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-03-23T10:32:40.794Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 13,
               "Title": "StatsCreateViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\Basketball-Players\\BasketballPlayers.Application\\ViewModels\\StatsViewModels\\StatsCreateViewModel.cs",
               "RelativeDocumentMoniker": "BasketballPlayers.Application\\ViewModels\\StatsViewModels\\StatsCreateViewModel.cs",
@@ -96,12 +164,11 @@
               "RelativeToolTip": "BasketballPlayers.Application\\ViewModels\\StatsViewModels\\StatsCreateViewModel.cs",
               "ViewState": "AgIAACsAAAAAAAAAAAAcwDgAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-23T10:25:37.826Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-23T10:25:37.826Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 12,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\Basketball-Players\\BasketballPlayers.Web\\Views\\Stats\\Create.cshtml",
               "RelativeDocumentMoniker": "BasketballPlayers.Web\\Views\\Stats\\Create.cshtml",
@@ -109,8 +176,7 @@
               "RelativeToolTip": "BasketballPlayers.Web\\Views\\Stats\\Create.cshtml",
               "ViewState": "AgIAAAgAAAAAAAAAAAAQwBAAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-23T10:07:33.058Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-23T10:07:33.058Z"
             },
             {
               "$type": "Document",
@@ -127,7 +193,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 14,
               "Title": "StatsViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\Basketball-Players\\BasketballPlayers.Application\\ViewModels\\StatsViewModels\\StatsViewModel.cs",
               "RelativeDocumentMoniker": "BasketballPlayers.Application\\ViewModels\\StatsViewModels\\StatsViewModel.cs",
@@ -135,8 +201,7 @@
               "RelativeToolTip": "BasketballPlayers.Application\\ViewModels\\StatsViewModels\\StatsViewModel.cs",
               "ViewState": "AgIAAA8AAAAAAAAAAAA7wAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-23T10:05:27.486Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-23T10:05:27.486Z"
             },
             {
               "$type": "Document",
@@ -146,14 +211,14 @@
               "RelativeDocumentMoniker": "BasketballPlayers.Web\\Views\\Stats\\PlayerStats.cshtml",
               "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\Basketball-Players\\BasketballPlayers.Web\\Views\\Stats\\PlayerStats.cshtml",
               "RelativeToolTip": "BasketballPlayers.Web\\Views\\Stats\\PlayerStats.cshtml",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAAC4AAAA0AAAAAAAAAA==",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAAC0AAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-03-23T09:36:11.271Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 7,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\Basketball-Players\\BasketballPlayers.Web\\Views\\Player\\Delete.cshtml",
               "RelativeDocumentMoniker": "BasketballPlayers.Web\\Views\\Player\\Delete.cshtml",
@@ -166,7 +231,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 9,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\Basketball-Players\\BasketballPlayers.Web\\Views\\Player\\Edit.cshtml",
               "RelativeDocumentMoniker": "BasketballPlayers.Web\\Views\\Player\\Edit.cshtml",
@@ -185,14 +250,14 @@
               "RelativeDocumentMoniker": "BasketballPlayers.Web\\Views\\Player\\Create.cshtml",
               "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\Basketball-Players\\BasketballPlayers.Web\\Views\\Player\\Create.cshtml",
               "RelativeToolTip": "BasketballPlayers.Web\\Views\\Player\\Create.cshtml",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABMAAAASAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABMAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-03-23T09:09:57.979Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 15,
               "Title": "Stats.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\Basketball-Players\\BasketballPlayers.Domain\\Models\\Stats.cs",
               "RelativeDocumentMoniker": "BasketballPlayers.Domain\\Models\\Stats.cs",
@@ -200,18 +265,17 @@
               "RelativeToolTip": "BasketballPlayers.Domain\\Models\\Stats.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAAwAsAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-23T08:53:57.276Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-23T08:53:57.276Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 6,
               "Title": "Details.cshtml",
               "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\Basketball-Players\\BasketballPlayers.Web\\Views\\Player\\Details.cshtml",
               "RelativeDocumentMoniker": "BasketballPlayers.Web\\Views\\Player\\Details.cshtml",
               "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\Basketball-Players\\BasketballPlayers.Web\\Views\\Player\\Details.cshtml",
               "RelativeToolTip": "BasketballPlayers.Web\\Views\\Player\\Details.cshtml",
-              "ViewState": "AgIAAEsAAAAAAAAAAAAAAFgAAABEAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAFgAAABEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-03-21T18:03:18.218Z",
               "EditorCaption": ""
