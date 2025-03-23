@@ -1,12 +1,12 @@
 ﻿using BasketballPlayers.Application.Contracts;
 using BasketballPlayers.Application.ViewModels.PlayerViewModels;
 using Microsoft.AspNetCore.Mvc;
+using System;
+using System.Threading.Tasks;
 
 namespace BasketballPlayers.Web.Controllers
 {
-    [ApiController]
-    [Route("api/players")]
-    public class PlayerController : ControllerBase
+    public class PlayerController : Controller
     {
         private readonly IPlayerService _playerService;
 
@@ -15,90 +15,106 @@ namespace BasketballPlayers.Web.Controllers
             _playerService = playerService;
         }
 
-        // GET: api/Player
-        [HttpGet]
-        [ProducesResponseType(StatusCodes.Status200OK)]
-        public async Task<ActionResult<IEnumerable<PlayerViewModel>>> GetAllPlayers()
+        // GET: Player
+        public async Task<IActionResult> Index()
         {
             var players = await _playerService.GetAllPlayersAsync();
-            return Ok(players);
+            return View(players);
         }
 
-        // GET: api/Player/{id}
-        [HttpGet("{id}")]
-        [ProducesResponseType(StatusCodes.Status200OK)]
-        [ProducesResponseType(StatusCodes.Status404NotFound)]
-        public async Task<ActionResult<PlayerDetailViewModel>> GetPlayerDetails(Guid id)
+        // GET: Player/Details/5
+        public async Task<IActionResult> Details(Guid id)
         {
-            try
+            var playerDetails = await _playerService.GetPlayerDetailsAsync(id);
+            if (playerDetails == null)
             {
-                var player = await _playerService.GetPlayerDetailsAsync(id);
-                return Ok(player);
+                return NotFound();
             }
-            catch (KeyNotFoundException)
-            {
-                return NotFound($"Player with ID {id} not found");
-            }
+            return View(playerDetails);
         }
 
-        // POST: api/Player
+        // GET: Player/Create
+        public IActionResult Create()
+        {
+            return View();
+        }
+
+        // POST: Player/Create
         [HttpPost]
-        [ProducesResponseType(StatusCodes.Status201Created)]
-        [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public async Task<ActionResult<PlayerViewModel>> CreatePlayer([FromBody] PlayerCreateViewModel playerViewModel)
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Create(PlayerCreateViewModel playerViewModel)
         {
-            if (!ModelState.IsValid)
+            if (ModelState.IsValid)
             {
-                return BadRequest(ModelState);
+                await _playerService.CreatePlayerAsync(playerViewModel);
+                return RedirectToAction(nameof(Index));
             }
-
-            var createdPlayer = await _playerService.CreatePlayerAsync(playerViewModel);
-            return CreatedAtAction(nameof(GetPlayerDetails), new { id = createdPlayer.Id }, createdPlayer);
+            return View(playerViewModel);
         }
 
-        // PUT: api/Player/{id}
-        [HttpPut("{id}")]
-        [ProducesResponseType(StatusCodes.Status204NoContent)]
-        [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        [ProducesResponseType(StatusCodes.Status404NotFound)]
-        public async Task<IActionResult> UpdatePlayer(Guid id, [FromBody] PlayerUpdateViewModel playerViewModel)
+        // GET: Player/Edit/5
+        public async Task<IActionResult> Edit(Guid id)
+        {
+            var player = await _playerService.GetPlayerDetailsAsync(id);
+            if (player == null)
+            {
+                return NotFound();
+            }
+
+            var updateViewModel = new PlayerUpdateViewModel
+            {
+                Id = player.Id,
+                Name = player.Name,
+                
+            };
+
+            return View(updateViewModel);
+        }
+
+        // POST: Player/Edit/5
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Edit(Guid id, PlayerUpdateViewModel playerViewModel)
         {
             if (id != playerViewModel.Id)
             {
-                return BadRequest("ID in the URL does not match ID in the request body");
+                return NotFound();
             }
 
-            if (!ModelState.IsValid)
+            if (ModelState.IsValid)
             {
-                return BadRequest(ModelState);
+                try
+                {
+                    await _playerService.UpdatePlayerAsync(playerViewModel);
+                }
+                catch (KeyNotFoundException)
+                {
+                    return NotFound();
+                }
+                return RedirectToAction(nameof(Index));
             }
-
-            try
-            {
-                await _playerService.UpdatePlayerAsync(playerViewModel);
-                return NoContent();
-            }
-            catch (KeyNotFoundException ex)
-            {
-                return NotFound(ex.Message);
-            }
+            return View(playerViewModel);
         }
 
-        // DELETE: api/Player/{id}
-        [HttpDelete("{id}")]
-        [ProducesResponseType(StatusCodes.Status204NoContent)]
-        [ProducesResponseType(StatusCodes.Status404NotFound)]
-        public async Task<IActionResult> DeletePlayer(Guid id)
+        // GET: Player/Delete/5
+        public async Task<IActionResult> Delete(Guid id)
         {
-            try
+            var player = await _playerService.GetPlayerDetailsAsync(id);
+            if (player == null)
             {
-                await _playerService.DeletePlayerAsync(id);
-                return NoContent();
+                return NotFound();
             }
-            catch (KeyNotFoundException)
-            {
-                return NotFound($"Player with ID {id} not found");
-            }
+
+            return View(player);
+        }
+
+        // POST: Player/Delete/5
+        [HttpPost, ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> DeleteConfirmed(Guid id)
+        {
+            await _playerService.DeletePlayerAsync(id);
+            return RedirectToAction(nameof(Index));
         }
     }
 }

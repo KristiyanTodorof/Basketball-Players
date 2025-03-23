@@ -1,0 +1,126 @@
+﻿@using BasketballPlayers.Application.ViewModels.StatsViewModels
+@model StatsUpdateViewModel
+
+@{
+    ViewData["Title"] = "Edit Statistics";
+}
+
+<h1>Edit Statistics for @ViewBag.PlayerName</h1>
+
+<hr />
+<div class="row">
+    <div class="col-md-6">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <input type="hidden" asp-for="PlayerId" />
+
+            <div class="form-group">
+                <label asp-for="GamesPlayed" class="control-label">Games Played</label>
+                <input asp-for="GamesPlayed" class="form-control" />
+                <span asp-validation-for="GamesPlayed" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Minutes" class="control-label">Minutes</label>
+                <input asp-for="Minutes" class="form-control" step="0.1" />
+                <span asp-validation-for="Minutes" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="PointsScored" class="control-label">Points Scored</label>
+                <input asp-for="PointsScored" class="form-control" step="0.1" />
+                <span asp-validation-for="PointsScored" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="OffensiveRebounds" class="control-label">Offensive Rebounds</label>
+                <input asp-for="OffensiveRebounds" class="form-control" step="0.1" />
+                <span asp-validation-for="OffensiveRebounds" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="DefensiveRebounds" class="control-label">Defensive Rebounds</label>
+                <input asp-for="DefensiveRebounds" class="form-control" step="0.1" />
+                <span asp-validation-for="DefensiveRebounds" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Assists" class="control-label">Assists</label>
+                <input asp-for="Assists" class="form-control" step="0.1" />
+                <span asp-validation-for="Assists" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Steals" class="control-label">Steals</label>
+                <input asp-for="Steals" class="form-control" step="0.1" />
+                <span asp-validation-for="Steals" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Blocks" class="control-label">Blocks</label>
+                <input asp-for="Blocks" class="form-control" step="0.1" />
+                <span asp-validation-for="Blocks" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Turnovers" class="control-label">Turnovers</label>
+                <input asp-for="Turnovers" class="form-control" step="0.1" />
+                <span asp-validation-for="Turnovers" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="FieldGoals" class="control-label">Field Goals</label>
+                <input asp-for="FieldGoals" class="form-control" step="0.1" />
+                <span asp-validation-for="FieldGoals" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="FieldGoalsAttempted" class="control-label">Field Goals Attempted</label>
+                <input asp-for="FieldGoalsAttempted" class="form-control" step="0.1" />
+                <span asp-validation-for="FieldGoalsAttempted" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="ThreePointFieldGoals" class="control-label">Three Point Field</label>
+                <input asp-for="ThreePointFieldGoals" class="form-control" step="0.1" />
+                <span asp-validation-for="ThreePointFieldGoals" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="ThreePointFieldGoalsAttempted" class="control-label">Three Point Field Goals Attempted</label>
+                <input asp-for="ThreePointFieldGoalsAttempted" class="form-control" step="0.1" />
+                <span asp-validation-for="ThreePointFieldGoalsAttempted" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="FreeThrowsMade" class="control-label">Free Throws Made</label>
+                <input asp-for="FreeThrowsMade" class="form-control" step="0.1" />
+                <span asp-validation-for="FreeThrowsMade" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="FreeThrowsAttempted" class="control-label">Free Throws Attempted</label>
+                <input asp-for="FreeThrowsAttempted" class="form-control" step="0.1" />
+                <span asp-validation-for="FreeThrowsAttempted" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="IsPlayedFiveYears" class="control-label">Played for five years</label>
+                <input asp-for="IsPlayedFiveYears" class="form-control" step="0.1" />
+                <span asp-validation-for="IsPlayedFiveYears" class="text-danger"></span>
+            </div>
+
+            <div class="form-group mt-3">
+                <input type="submit" value="Save" class="btn btn-primary" />
+                <a asp-action="PlayerStats" asp-route-playerId="@Model.PlayerId" class="btn btn-secondary">Cancel</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

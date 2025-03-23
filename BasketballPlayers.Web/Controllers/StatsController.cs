@@ -1,103 +1,150 @@
 ﻿using BasketballPlayers.Application.Contracts;
 using BasketballPlayers.Application.ViewModels.StatsViewModels;
 using Microsoft.AspNetCore.Mvc;
+using System;
+using System.Threading.Tasks;
 
 namespace BasketballPlayers.Web.Controllers
 {
-    [ApiController]
-    [Route("api/stats")]
-    public class StatsController : ControllerBase
+    public class StatsController : Controller
     {
         private readonly IStatsService _statsService;
+        private readonly IPlayerService _playerService;
 
-        public StatsController(IStatsService statsService)
+        public StatsController(IStatsService statsService, IPlayerService playerService)
         {
             _statsService = statsService;
+            _playerService = playerService;
         }
 
-        // GET: api/Stats/{id}
-        [HttpGet("{id}")]
-        [ProducesResponseType(StatusCodes.Status200OK)]
-        [ProducesResponseType(StatusCodes.Status404NotFound)]
-        public async Task<ActionResult<StatsViewModel>> GetStatsById(Guid id)
+        // GET: Stats/Details/5
+        public async Task<IActionResult> Details(Guid id)
         {
-            try
+            var stats = await _statsService.GetStatsByIdAsync(id);
+            if (stats == null)
             {
-                var stats = await _statsService.GetStatsByIdAsync(id);
-                if (stats == null)
-                {
-                    return NotFound($"Stats with ID {id} not found");
-                }
-                return Ok(stats);
+                return NotFound();
             }
-            catch (KeyNotFoundException)
-            {
-                return NotFound($"Stats with ID {id} not found");
-            }
+            return View(stats);
         }
 
-        // GET: api/Stats/player/{playerId}
-        [HttpGet("player/{playerId}")]
-        [ProducesResponseType(StatusCodes.Status200OK)]
-        [ProducesResponseType(StatusCodes.Status404NotFound)]
-        public async Task<ActionResult<StatsViewModel>> GetStatsByPlayerId(Guid playerId)
+        // GET: Stats/PlayerStats/5
+        public async Task<IActionResult> PlayerStats(Guid playerId)
         {
-            try
+            var stats = await _statsService.GetStatsByPlayerIdAsync(playerId);
+            if (stats == null)
             {
-                var stats = await _statsService.GetStatsByPlayerIdAsync(playerId);
-                if (stats == null)
-                {
-                    return NotFound($"Stats for player with ID {playerId} not found");
-                }
-                return Ok(stats);
+                return NotFound();
             }
-            catch (KeyNotFoundException)
-            {
-                return NotFound($"Stats for player with ID {playerId} not found");
-            }
+
+            // Get player details to display player name
+            var player = await _playerService.GetPlayerDetailsAsync(playerId);
+            ViewBag.PlayerName = $"{player.Name}";
+            ViewBag.PlayerId = playerId;
+
+            return View(stats);
         }
 
-        // POST: api/Stats
+        // GET: Stats/Create
+        public async Task<IActionResult> Create(Guid playerId)
+        {
+            var player = await _playerService.GetPlayerDetailsAsync(playerId);
+            if (player == null)
+            {
+                return NotFound();
+            }
+
+            ViewBag.PlayerName = $"{player.Name}";
+
+            var viewModel = new StatsCreateViewModel
+            {
+                PlayerId = playerId
+            };
+
+            return View(viewModel);
+        }
+
+        // POST: Stats/Create
         [HttpPost]
-        [ProducesResponseType(StatusCodes.Status201Created)]
-        [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public async Task<ActionResult<StatsViewModel>> CreateStats([FromBody] StatsCreateViewModel statsViewModel)
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Create(StatsCreateViewModel statsViewModel)
         {
-            if (!ModelState.IsValid)
+            if (ModelState.IsValid)
             {
-                return BadRequest(ModelState);
+                await _statsService.CreateStatsAsync(statsViewModel);
+                return RedirectToAction("PlayerStats", new { playerId = statsViewModel.PlayerId });
             }
 
-            var createdStats = await _statsService.CreateStatsAsync(statsViewModel);
-            return CreatedAtAction(nameof(GetStatsById), new { id = createdStats.Id }, createdStats);
+            var player = await _playerService.GetPlayerDetailsAsync(statsViewModel.PlayerId);
+            ViewBag.PlayerName = $"{player.Name}";
+
+            return View(statsViewModel);
         }
 
-        // PUT: api/Stats/{id}
-        [HttpPut("{id}")]
-        [ProducesResponseType(StatusCodes.Status204NoContent)]
-        [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        [ProducesResponseType(StatusCodes.Status404NotFound)]
-        public async Task<IActionResult> UpdateStats(Guid id, [FromBody] StatsUpdateViewModel statsViewModel)
+        // GET: Stats/Edit/5
+        public async Task<IActionResult> Edit(Guid id)
+        {
+            var stats = await _statsService.GetStatsByIdAsync(id);
+            if (stats == null)
+            {
+                return NotFound();
+            }
+
+            var updateViewModel = new StatsUpdateViewModel
+            {
+                Id = stats.Id,
+                PlayerId = stats.PlayerId,
+                GamesPlayed = stats.GamesPlayed,
+                Minutes = stats.Minutes,
+                PointsScored = stats.PointsScored,
+                FieldGoals = stats.FieldGoals,
+                FieldGoalsAttempted = stats.FieldGoalsAttempted,
+                ThreePointFieldGoals = stats.ThreePointFieldGoals,
+                ThreePointFieldGoalsAttempted = stats.ThreePointFieldGoalsAttempted,
+                FreeThrowsMade = stats.FreeThrowsMade,
+                FreeThrowsAttempted = stats.FreeThrowsAttempted,
+                OffensiveRebounds = stats.OffensiveRebounds,
+                DefensiveRebounds = stats.DefensiveRebounds,
+                Assists = stats.Assists,
+                Steals = stats.Steals,
+                Blocks = stats.Blocks,
+                Turnovers = stats.Turnovers,
+                IsPlayedFiveYears = stats.IsPlayedFiveYears,
+            };
+
+            var player = await _playerService.GetPlayerDetailsAsync(stats.PlayerId);
+            ViewBag.PlayerName = $"{player.Name}";
+
+            return View(updateViewModel);
+        }
+
+        // POST: Stats/Edit/5
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Edit(Guid id, StatsUpdateViewModel statsViewModel)
         {
             if (id != statsViewModel.Id)
             {
-                return BadRequest("ID in the URL does not match ID in the request body");
+                return NotFound();
             }
 
-            if (!ModelState.IsValid)
+            if (ModelState.IsValid)
             {
-                return BadRequest(ModelState);
+                try
+                {
+                    await _statsService.UpdateStatsAsync(statsViewModel);
+                }
+                catch (KeyNotFoundException)
+                {
+                    return NotFound();
+                }
+                return RedirectToAction("PlayerStats", new { playerId = statsViewModel.PlayerId });
             }
 
-            try
-            {
-                await _statsService.UpdateStatsAsync(statsViewModel);
-                return NoContent();
-            }
-            catch (KeyNotFoundException ex)
-            {
-                return NotFound(ex.Message);
-            }
+            var player = await _playerService.GetPlayerDetailsAsync(statsViewModel.PlayerId);
+            ViewBag.PlayerName = $"{player.Name}";
+
+            return View(statsViewModel);
         }
     }
 }

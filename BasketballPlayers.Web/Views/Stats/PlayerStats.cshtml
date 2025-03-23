@@ -1,0 +1,106 @@
+﻿@using BasketballPlayers.Application.ViewModels.StatsViewModels
+@model StatsViewModel
+
+@{
+    ViewData["Title"] = "Player Statistics";
+}
+
+<h1>Statistics for @ViewBag.PlayerName</h1>
+
+<div>
+    <hr />
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    <h4>Scoring & Efficiency</h4>
+                </div>
+                <div class="card-body">
+                    <dl class="row">
+                        <dt class="col-sm-6">Points Per Game</dt>
+                        <dd class="col-sm-6">@Model.PointsPerGame</dd>
+
+                        <dt class="col-sm-6">Field Goal %</dt>
+                        <dd class="col-sm-6">@Model.FieldGoalPercentage%</dd>
+
+                        <dt class="col-sm-6">Three Point %</dt>
+                        <dd class="col-sm-6">@Model.ThreePointPercentage%</dd>
+
+                        <dt class="col-sm-6">Free Throw %</dt>
+                        <dd class="col-sm-6">@Model.FreeThrowPercentage%</dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    <h4>Other Statistics</h4>
+                </div>
+                <div class="card-body">
+                    <dl class="row">
+                        <dt class="col-sm-6">GP</dt>
+                        <dd class="col-sm-6">@Model.GamesPlayed</dd>
+
+                        <dt class="col-sm-6">MIN>
+                        <dd class="col-sm-6">@Model.Minutes</dd>
+
+                        <dt class="col-sm-6">PTS</dt>
+                        <dd class="col-sm-6">@Model.PointsScored</dd>
+
+                        <dt class="col-sm-6">FGS</dt>
+                        <dd class="col-sm-6">@Model.FieldGoals</dd>
+
+                        <dt class="col-sm-6">FGA</dt>
+                        <dd class="col-sm-6">@Model.FieldGoalsAttempted</dd>
+
+                        <dt class="col-sm-6">3PM</dt>
+                        <dd class="col-sm-6">@Model.ThreePointFieldGoals</dd>
+
+                        <dt class="col-sm-6">3PA</dt>
+                        <dd class="col-sm-6">@Model.ThreePointFieldGoalsAttempted</dd>
+
+                        <dt class="col-sm-6">FTM</dt>
+                        <dd class="col-sm-6">@Model.FreeThrowsMade</dd>
+
+                        <dt class="col-sm-6">FTA</dt>
+                        <dd class="col-sm-6">@Model.FreeThrowsAttempted</dd>
+
+                        <dt class="col-sm-6">OREB</dt>
+                        <dd class="col-sm-6">@Model.OffensiveRebounds</dd>
+
+                        <dt class="col-sm-6">DREB</dt>
+                        <dd class="col-sm-6">@Model.DefensiveRebounds</dd>
+
+                        <dt class="col-sm-6">TR</dt>
+                        <dd class="col-sm-6">@Model.TotalRebounds</dd>
+
+                        <dt class="col-sm-6">RPG</dt>
+                        <dd class="col-sm-6">@Model.ReboundsPerGame</dd>
+
+                        <dt class="col-sm-6">AST</dt>
+                        <dd class="col-sm-6">@Model.Assists</dd>
+
+                        <dt class="col-sm-6">APG</dt>
+                        <dd class="col-sm-6">@Model.AssistsPerGame</dd>
+
+                        <dt class="col-sm-6">STL</dt>
+                        <dd class="col-sm-6">@Model.Steals</dd>
+
+                        <dt class="col-sm-6">BLK</dt>
+                        <dd class="col-sm-6">@Model.Blocks</dd>
+
+                        <dt class="col-sm-6">TOV</dt>
+                        <dd class="col-sm-6">@Model.Turnovers</dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mt-3">
+        <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-warning">Edit Stats</a>
+        <a asp-controller="Player" asp-action="Details" asp-route-id="@ViewBag.PlayerId" class="btn btn-secondary">Back to Player</a>
+    </div>
+</div>

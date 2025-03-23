@@ -2,49 +2,34 @@
 @model IEnumerable<PlayerViewModel>
 
 @{
-    ViewData["Title"] = "Players";
+    ViewData["Title"] = "Players List";
 }
 
-<div class="container">
-    <div class="d-flex justify-content-between align-items-center mb-4">
-        <h1>Basketball Players</h1>
-        <a asp-action="Create" class="btn btn-primary">
-            <i class="bi bi-plus-circle"></i> Add New Player
-        </a>
-    </div>
+<h1>Basketball Players</h1>
 
-    <div class="card shadow-sm">
-        <div class="card-body">
-            <div class="table-responsive">
-                <table class="table table-hover">
-                    <thead class="table-dark">
-                        <tr>
-                            <th>Name</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        @foreach (var player in Model)
-                        {
-                            <tr>
-                                <td>@player.Name</td>
-                                <td>
-                                    <div class="btn-group" role="group">
-                                        <a asp-action="Details" asp-route-id="@player.Id" class="btn btn-sm btn-info">
-                                            <i class="bi bi-info-circle"></i>
-                                        </a>
-                                        <a asp-action="Edit" asp-route-id="@player.Id" class="btn btn-sm btn-warning">
-                                            <i class="bi bi-pencil"></i>
-                                        </a>
-                                        <a asp-action="Delete" asp-route-id="@player.Id" class="btn btn-sm btn-danger">
-                                            <i class="bi bi-trash"></i>
-                                        </a>
-                                    </div>
-                                </td>
-                            </tr>
-                        }
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </div>
-</div>
+<p>
+    <a asp-action="Create" class="btn btn-primary">Create New</a>
+</p>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Name</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @item.Name
+                </td>>
+                <td>
+                    <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-info btn-sm">Details</a>
+                    <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-warning btn-sm">Edit</a>
+                    <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger btn-sm">Delete</a>
+                    <a asp-controller="Stats" asp-action="PlayerStats" asp-route-playerId="@item.Id" class="btn btn-success btn-sm">Stats</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

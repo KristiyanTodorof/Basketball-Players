@@ -1,0 +1,45 @@
+﻿@using BasketballPlayers.Application.ViewModels.StatsViewModels
+@model StatsViewModel
+
+@{
+    ViewData["Title"] = "Statistics Details";
+}
+
+<h1>Statistics Details</h1>
+
+<div>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-3">Points Per Game</dt>
+        <dd class="col-sm-9">@Model.PointsPerGame</dd>
+
+        <dt class="col-sm-3">Rebounds</dt>
+        <dd class="col-sm-9">@Model.TotalRebounds</dd>
+
+        <dt class="col-sm-3">Assists</dt>
+        <dd class="col-sm-9">@Model.Assists</dd>
+
+        <dt class="col-sm-3">Steals</dt>
+        <dd class="col-sm-9">@Model.Steals</dd>
+
+        <dt class="col-sm-3">Blocks</dt>
+        <dd class="col-sm-9">@Model.Blocks</dd>
+
+        <dt class="col-sm-3">Field Goal %</dt>
+        <dd class="col-sm-9">@Model.FieldGoalPercentage%</dd>
+
+        <dt class="col-sm-3">Three Point %</dt>
+        <dd class="col-sm-9">@Model.ThreePointPercentage%</dd>
+
+        <dt class="col-sm-3">Free Throw %</dt>
+        <dd class="col-sm-9">@Model.FreeThrowPercentage%</dd>
+
+        <dt class="col-sm-3">Games Played</dt>
+        <dd class="col-sm-9">@Model.GamesPlayed</dd>
+    </dl>
+
+    <div>
+        <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-warning">Edit</a>
+        <a asp-controller="Player" asp-action="Details" asp-route-id="@Model.PlayerId" class="btn btn-secondary">Back to Player</a>
+    </div>
+</div>
