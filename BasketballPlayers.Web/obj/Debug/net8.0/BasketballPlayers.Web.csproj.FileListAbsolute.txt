@@ -434,3 +434,4 @@ C:\Users\Admin\Documents\GitHub\Basketball-Players\BasketballPlayers.Web\bin\Deb
 C:\Users\Admin\Documents\GitHub\Basketball-Players\BasketballPlayers.Web\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Drawing.Common.dll
 C:\Users\Admin\Documents\GitHub\Basketball-Players\BasketballPlayers.Web\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\Admin\Documents\GitHub\Basketball-Players\BasketballPlayers.Web\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
+C:\Users\Admin\Documents\GitHub\Basketball-Players\BasketballPlayers.Web\bin\Debug\net8.0\System.ClientModel.dll

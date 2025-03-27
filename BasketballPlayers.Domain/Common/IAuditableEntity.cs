@@ -8,9 +8,9 @@ namespace BasketballPlayers.Domain.Common
 {
     public interface IAuditableEntity
     {
-        public DateTime CreatedAt { get; set; }
-        public DateTime? ModifiedAt { get; set; }
-        public DateTime? DeletedAt { get; set; }
+        public DateTimeOffset CreatedAt { get; set; }
+        public DateTimeOffset? ModifiedAt { get; set; }
+        public DateTimeOffset? DeletedAt { get; set; }
         public bool IsDeleted { get; set; }
     }
 }

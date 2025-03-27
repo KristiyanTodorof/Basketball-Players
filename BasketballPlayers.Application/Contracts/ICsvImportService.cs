@@ -8,6 +8,6 @@ namespace BasketballPlayers.Application.Contracts
 {
     public interface ICsvImportService
     {
-        Task ImportBasketballDataAsync(string filePath);
+        Task ImportBasketballDataAsync();
     }
 }

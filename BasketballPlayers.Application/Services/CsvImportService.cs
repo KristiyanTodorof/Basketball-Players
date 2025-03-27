@@ -29,12 +29,12 @@ namespace BasketballPlayers.Application.Services
             _mapper = mapper;
         }
 
-        public async Task ImportBasketballDataAsync(string filePath)
+        public async Task ImportBasketballDataAsync()
         {
-            using (var reader = new StreamReader(filePath))
+            using (var reader = new StreamReader("nba_data.csv"))
             using (var csv = new CsvReader(reader, CultureInfo.InvariantCulture))
             {
-                var records = csv.GetRecords<BasketballPlayersViewModel>().ToList();
+                var records = csv.GetRecords<BasketballPlayersViewModel>();
                 Dictionary<string, Player> playersDict = new Dictionary<string, Player>();
 
                 foreach (var record in records)

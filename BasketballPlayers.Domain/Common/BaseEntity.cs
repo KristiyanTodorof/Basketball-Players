@@ -9,9 +9,9 @@ namespace BasketballPlayers.Domain.Common
     public class BaseEntity<T> : IIdentity<T>, IAuditableEntity
     {
         public T Id { get; set; }
-        public DateTime CreatedAt { get; set; }
-        public DateTime? ModifiedAt { get; set; }
-        public DateTime? DeletedAt { get; set; }
+        public DateTimeOffset CreatedAt { get; set; } = DateTimeOffset.UtcNow;
+        public DateTimeOffset? ModifiedAt { get; set; }
+        public DateTimeOffset? DeletedAt { get; set; }
         public bool IsDeleted { get; set; }
     }
 }
