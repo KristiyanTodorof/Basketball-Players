@@ -8,6 +8,7 @@ using BasketballPlayers.Infrastructure.Repositories;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using BasketballPlayers.Application.Services.Mapping;
+using BasketballPlayers.Infrastructure.Binders;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -22,6 +23,10 @@ builder.Services.AddAutoMapper(typeof(BasketballMappingProfile));
 
 builder.Services.AddDefaultIdentity<User>(options => options.SignIn.RequireConfirmedAccount = true)
     .AddEntityFrameworkStores<ApplicationDbContext>();
+builder.Services.AddControllers(options =>
+{
+    options.ModelBinderProviders.Insert(0, new PlayerModelBinderProvider());
+});
 builder.Services.AddControllersWithViews();
 
 builder.Services.AddScoped<IPlayerRepository, PlayerRepository>();
